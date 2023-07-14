@@ -22,8 +22,3 @@ def _address2latlon(address: str) -> gpd.GeoDataFrame:
         geocoded_addresses["geometry"].values[0].x,
     )
     return lat, lon
-
-
-if __name__ == "__main__":
-    # Test function
-    print(_address2latlon("Berlin"))
